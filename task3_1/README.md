@@ -1,4 +1,4 @@
- gcc lex.yy.c -o a.out -ll
+gcc lex.yy.c -o a.out -ll
 ./a.out < sample2_1.l
 
 

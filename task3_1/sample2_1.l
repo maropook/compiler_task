@@ -3,8 +3,8 @@ int line=0;
 int count=0;
 %}
 %%
-\n    { line++; count++; }
 .    { count++; }
+\n    { line++; count++; }
 %%
 int main(){
     while(yylex() != 0){

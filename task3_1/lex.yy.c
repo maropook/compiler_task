@@ -363,7 +363,7 @@ struct yy_trans_info
 	};
 static const flex_int16_t yy_accept[7] =
     {   0,
-        0,    0,    4,    2,    1,    0
+        0,    0,    4,    1,    2,    0
     } ;
 
 static const YY_CHAR yy_ec[256] =
@@ -719,15 +719,15 @@ do_action:	/* This label is used only to access EOF actions. */
 			goto yy_find_action;
 
 case 1:
-/* rule 1 can match eol */
 YY_RULE_SETUP
 #line 6 "sample2_1.l"
-{ line++; count++; }
+{ count++; }
 	YY_BREAK
 case 2:
+/* rule 2 can match eol */
 YY_RULE_SETUP
 #line 7 "sample2_1.l"
-{ count++; }
+{ line++; count++; }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
