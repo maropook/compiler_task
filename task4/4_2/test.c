@@ -1,12 +1,17 @@
 #include <stdio.h>
 
+void test_function(float);
+
 int main()
 {
-    int integer = 42;
+    int figure = 42;
     float decimal = 3.14;
+    test_function(decimal);
+    return 0;
+}
 
-    printf("整数: %d\n", integer);
-    printf("少数付き: %.2f\n", decimal);
-
+void test_function(float x)
+{
+    x = x + 10;
     return 0;
 }

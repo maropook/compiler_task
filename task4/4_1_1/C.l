@@ -37,6 +37,7 @@
 .   { /* do nothing */ }
 \n  { /* do nothing */ }
 %%
+
 int main(){
     while(yylex() != 0){
     }

@@ -1,8 +1,5 @@
 flex C_1.l
 gcc -o C_1 lex.yy.c -ll
-./C_1
-
-
 ./C_1 < /Users/hasegawaitsuki_1/ghq/github.com/maropook/compiler_task/task4/4_2/test.c
 
 

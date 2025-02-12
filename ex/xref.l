@@ -24,8 +24,38 @@ struct LNUM *tmp3;
 
 %%
 
-"auto"        { /* do nothing */ }
-"while"       { /* do nothing */ }
+"auto"      { /* do nothing */ }
+"break"     { /* do nothing */ }
+"case"      { /* do nothing */ }
+"char"      { /* do nothing */ }
+"const"     { /* do nothing */ }
+"continue"  { /* do nothing */ }
+"default"   { /* do nothing */ }
+"do"        { /* do nothing */ }
+"double"    { /* do nothing */ }
+"else"      { /* do nothing */ }
+"enum"      { /* do nothing */ }
+"extern"    { /* do nothing */ }
+"float"     { /* do nothing */ }
+"for"       { /* do nothing */ }
+"goto"      { /* do nothing */ }
+"if"        { /* do nothing */ }
+"int"       { /* do nothing */ }
+"long"      { /* do nothing */ }
+"register"  { /* do nothing */ }
+"return"    { /* do nothing */ }
+"short"     { /* do nothing */ }
+"signed"    { /* do nothing */ }
+"sizeof"    { /* do nothing */ }
+"static"    { /* do nothing */ }
+"struct"    { /* do nothing */ }
+"switch"    { /* do nothing */ }
+"typedef"   { /* do nothing */ }
+"union"     { /* do nothing */ }
+"unsigned"  { /* do nothing */ }
+"void"      { /* do nothing */ }
+"volatile"  { /* do nothing */ }
+"while"     { /* do nothing */ }
 
 [_A-Za-z][_A-Za-z0-9]*  {
     for (tmp2 = h;
@@ -70,8 +100,9 @@ struct LNUM *tmp3;
     }
 }
 
-.   { /* do nothing */ }
-\n { lineno++; }
+^#.*\n  { /* do nothing */ }
+.       { /* do nothing */ }
+\n      { lineno++; }
 
 %%
 
